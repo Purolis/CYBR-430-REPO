@@ -1,6 +1,6 @@
 !Switch / Router Standard ACL
 ip access-list standard SECURITY-STANDARD-ACL
-permit 172.20.24.144 255.255.255.248
+permit 172.20.24.144 0.0.0.7
 deny any
 
 line vty 0 4
@@ -56,3 +56,4 @@ deny ip 224.0.0.0 15.255.255.255 any
 
 int gig0/0/1
 ip access-group NO-BAD-ADDRESSES-PORTS in
+
