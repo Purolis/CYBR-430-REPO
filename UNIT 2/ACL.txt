@@ -51,4 +51,8 @@ deny ip 10.0.0.0 0.255.255.255 any
 deny ip 192.168.0.0 0.0.255.255 any
 
 ! IP Multicast
+
 deny ip 224.0.0.0 15.255.255.255 any
+
+int gig0/0/1
+ip access-group NO-BAD-ADDRESSES-PORTS in
