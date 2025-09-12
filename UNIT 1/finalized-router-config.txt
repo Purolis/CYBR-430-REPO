@@ -45,7 +45,6 @@ ip dhcp excluded-address 172.20.24.94
 ip dhcp excluded-address 172.20.24.126
 ip dhcp excluded-address 172.20.24.142
 ip dhcp excluded-address 172.20.24.150
-ip dhcp excluded-address 172.20.24.166
 !
 ip dhcp pool VLAN-10-SoftDev
  network 172.20.24.0 255.255.255.192
@@ -74,12 +73,6 @@ ip dhcp pool VLAN-40-Printers
 ip dhcp pool VLAN-50-Security
  network 172.20.24.144 255.255.255.248
  default-router 172.20.24.150
- dns-server 8.8.8.8
- domain-name crisco.com
-!
-ip dhcp pool VLAN-99-Network
- network 172.20.24.144 255.255.255.240
- default-router 172.20.24.166
  dns-server 8.8.8.8
  domain-name crisco.com
 !
