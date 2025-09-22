@@ -34,6 +34,7 @@ ip access-group PRINTERS-HTTPS in
 
 !ACL that will help mitigate outside/inside attacks
 ip access-list extended NO-BAD-ADDRESSES-PORTS
+permit ip 172.20.24.0 0.0.15.255 any
 ! Inbound Zeroes
 deny ip host 0.0.0.0 any
 
@@ -56,4 +57,5 @@ deny ip 224.0.0.0 15.255.255.255 any
 
 int gig0/0/1
 ip access-group NO-BAD-ADDRESSES-PORTS in
+
 
