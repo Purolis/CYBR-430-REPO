@@ -1,4 +1,14 @@
 6	Oct 01 2025	20:17:15		172.20.24.145	64522	144.215.0.25	64522	Teardown dynamic UDP translation from inside:172.20.24.145/64522 to outside:144.215.0.25/64522 duration 0:02:33
+This is just a UDP translation that is getting timeouted because it reached the global timeout value.
+
 6	Oct 01 2025	20:17:36		172.20.24.145	53447	144.215.0.25	53447	Teardown dynamic TCP translation from inside:172.20.24.145/53447 to outside:144.215.0.25/53447 duration 0:02:21
+This is just a TCP translation that is getting timeouted because it reached the global timeout value.
+
+
 6	Oct 01 2025	20:17:37		13.107.246.38	443	172.20.24.145	53474	Teardown TCP connection 19377 for outside:13.107.246.38/443 to inside:172.20.24.145/53474 duration 0:00:00 bytes 9628 TCP FINs
 severity date time syslogid sourceip sourceport destip destport desc
+The termination of communication between two established TCP connections.
+
+
+
+We couldn't find anything being blocked in our timespan left of our lab, these connections are simply just getting terminated due to timeout.
